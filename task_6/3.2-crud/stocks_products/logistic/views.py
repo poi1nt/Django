@@ -10,7 +10,7 @@ class ProductViewSet(ModelViewSet):
     serializer_class = ProductSerializer
     # при необходимости добавьте параметры фильтрации
     filter_backends = [SearchFilter]
-    search_fields = ['title']
+    search_fields = ['title', 'description']
 
 
 
@@ -20,4 +20,4 @@ class StockViewSet(ModelViewSet):
     # при необходимости добавьте параметры фильтрации
     filter_backends = [SearchFilter]
     filterset_fields = ['products']
-    search_fields = ['products__title']
+    search_fields = ['products__title', 'products__description']

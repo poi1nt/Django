@@ -46,7 +46,7 @@ POST {{baseUrl}}/stocks/
 Content-Type: application/json
 
 {
-  "address": "мой адрес не дом и не улица, мой адрес сегодня такой: www.ленинград-спб.ru1",
+  "address": "мой адрес не дом и не улица, мой адрес сегодня такой: www.ленинград-спб.ru2",
   "positions": [
     {
       "product": 2,
@@ -85,5 +85,5 @@ Content-Type: application/json
 ###
 
 # поиск складов, где есть определенный продукт
-GET {{baseUrl}}/stocks/?search=огур
+GET {{baseUrl}}/stocks/?search=зеленый
 Content-Type: application/json
